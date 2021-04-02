@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register Name AgeVC-->
+        <scene sceneID="cqn-nB-6Sq">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVz-QB-ot3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="RegisterNameAgeVC" id="6zo-fF-UeV" customClass="RegisterNameAgeVC" customModule="match" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d7l-9V-mar">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学年を選択してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOL-Gi-dxi">
+                                <rect key="frame" x="30" y="104" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qi5-WV-teg">
+                                <rect key="frame" x="30" y="155" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eyu-1J-vh0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="2021年度入学(1年生)">
+                                    <color key="titleColor" name="label"/>
+                                </state>
+                                <connections>
+                                    <action selector="tap2021Button:" destination="6zo-fF-UeV" eventType="touchUpInside" id="9Pq-kX-xOx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7q-tP-xlN">
+                                <rect key="frame" x="30" y="205" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Qau-JM-YV3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="2020年度入学(2年生)">
+                                    <color key="titleColor" name="label"/>
+                                </state>
+                                <connections>
+                                    <action selector="tap2020Button:" destination="6zo-fF-UeV" eventType="touchUpInside" id="zHO-S8-uRV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7Q-o0-fCH">
+                                <rect key="frame" x="30" y="305" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Hf1-D4-cqT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="2018年度入学(4年生)">
+                                    <color key="titleColor" name="label"/>
+                                </state>
+                                <connections>
+                                    <action selector="tap2018Button:" destination="6zo-fF-UeV" eventType="touchUpInside" id="OWR-rf-Sub"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iU0-mh-yAp">
+                                <rect key="frame" x="30" y="255" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xFm-42-rzK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="2019年度入学(3年生)">
+                                    <color key="titleColor" name="label"/>
+                                </state>
+                                <connections>
+                                    <action selector="tap2019Button:" destination="6zo-fF-UeV" eventType="touchUpInside" id="G0x-bh-YOJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Op-zY-9OB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XOL-Gi-dxi" firstAttribute="leading" secondItem="0Op-zY-9OB" secondAttribute="leading" constant="30" id="9ux-8V-Yn1"/>
+                            <constraint firstItem="0Op-zY-9OB" firstAttribute="trailing" secondItem="qi5-WV-teg" secondAttribute="trailing" constant="50" id="ALY-HA-LVr"/>
+                            <constraint firstItem="qi5-WV-teg" firstAttribute="leading" secondItem="0Op-zY-9OB" secondAttribute="leading" constant="30" id="BmC-qp-rIZ"/>
+                            <constraint firstItem="e7q-tP-xlN" firstAttribute="top" secondItem="qi5-WV-teg" secondAttribute="bottom" constant="10" id="Btr-Y5-OuB"/>
+                            <constraint firstItem="0Op-zY-9OB" firstAttribute="trailing" secondItem="e7q-tP-xlN" secondAttribute="trailing" constant="50" id="Mdu-bv-GjV"/>
+                            <constraint firstItem="0Op-zY-9OB" firstAttribute="trailing" secondItem="iU0-mh-yAp" secondAttribute="trailing" constant="50" id="Srf-Cp-c5b"/>
+                            <constraint firstItem="h7Q-o0-fCH" firstAttribute="top" secondItem="iU0-mh-yAp" secondAttribute="bottom" constant="10" id="a8S-GA-4kT"/>
+                            <constraint firstItem="0Op-zY-9OB" firstAttribute="trailing" secondItem="h7Q-o0-fCH" secondAttribute="trailing" constant="50" id="eZw-6a-E95"/>
+                            <constraint firstItem="e7q-tP-xlN" firstAttribute="leading" secondItem="0Op-zY-9OB" secondAttribute="leading" constant="30" id="gty-qf-41h"/>
+                            <constraint firstItem="iU0-mh-yAp" firstAttribute="top" secondItem="e7q-tP-xlN" secondAttribute="bottom" constant="10" id="l1F-qD-Dyp"/>
+                            <constraint firstItem="iU0-mh-yAp" firstAttribute="leading" secondItem="0Op-zY-9OB" secondAttribute="leading" constant="30" id="mdE-eZ-Qtj"/>
+                            <constraint firstItem="qi5-WV-teg" firstAttribute="top" secondItem="XOL-Gi-dxi" secondAttribute="bottom" constant="30" id="nP2-M2-5dE"/>
+                            <constraint firstItem="XOL-Gi-dxi" firstAttribute="top" secondItem="0Op-zY-9OB" secondAttribute="top" constant="60" id="oY5-Xy-ZII"/>
+                            <constraint firstItem="h7Q-o0-fCH" firstAttribute="leading" secondItem="0Op-zY-9OB" secondAttribute="leading" constant="30" id="vmg-ZF-n2d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b7y-68-giW"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="67" y="66"/>
+        </scene>
+        <!--Select Fac Dep View Controller-->
+        <scene sceneID="U7w-DC-nPu">
+            <objects>
+                <viewController storyboardIdentifier="SelectFacDepViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Isb-EV-3fd" customClass="SelectFacDepViewController" customModule="match" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cm3-wF-T9u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学部：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrO-G9-Zha">
+                                <rect key="frame" x="20" y="104" width="56" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学科：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCq-NV-Toa">
+                                <rect key="frame" x="20" y="172" width="56" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="学部を選択" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9DT-18-ZvC" customClass="CustomTextField" customModule="match" customModuleProvider="target">
+                                <rect key="frame" x="91" y="98" width="230" height="34"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="nEu-FD-1Rs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="あれば選択してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOg-rE-qxI" customClass="CustomTextField" customModule="match" customModuleProvider="target">
+                                <rect key="frame" x="91" y="166" width="230" height="34"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="hwT-NE-j56"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NTx-h9-IPI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9DT-18-ZvC" firstAttribute="top" secondItem="NTx-h9-IPI" secondAttribute="top" constant="54" id="8cA-Yg-U5D"/>
+                            <constraint firstItem="tOg-rE-qxI" firstAttribute="top" secondItem="9DT-18-ZvC" secondAttribute="bottom" constant="34" id="H0z-ht-lxF"/>
+                            <constraint firstItem="9DT-18-ZvC" firstAttribute="leading" secondItem="TrO-G9-Zha" secondAttribute="trailing" constant="15" id="JpH-YO-57n"/>
+                            <constraint firstItem="HCq-NV-Toa" firstAttribute="leading" secondItem="NTx-h9-IPI" secondAttribute="leading" constant="20" id="Tko-bQ-8xy"/>
+                            <constraint firstItem="TrO-G9-Zha" firstAttribute="top" secondItem="NTx-h9-IPI" secondAttribute="top" constant="60" id="UwE-Iz-nxS"/>
+                            <constraint firstItem="tOg-rE-qxI" firstAttribute="leading" secondItem="HCq-NV-Toa" secondAttribute="trailing" constant="15" id="fOZ-p2-y6E"/>
+                            <constraint firstItem="TrO-G9-Zha" firstAttribute="leading" secondItem="NTx-h9-IPI" secondAttribute="leading" constant="20" id="o6M-k1-0T3"/>
+                            <constraint firstItem="HCq-NV-Toa" firstAttribute="top" secondItem="9DT-18-ZvC" secondAttribute="bottom" constant="40" id="tow-XR-npN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="depTextField" destination="tOg-rE-qxI" id="Ywo-lS-Dni"/>
+                        <outlet property="facTextField" destination="9DT-18-ZvC" id="K5G-v6-HqM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="utx-wb-T0b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="label">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
