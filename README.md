@@ -1,6 +1,6 @@
 
 # campus-post-ios
-created on 2021 April
+created in April 2021
 
 Coronavirus turns college classes online and it is difficult for us to make friends.
 So I thought the application which allowed you to communication with people from the same university is popular.
